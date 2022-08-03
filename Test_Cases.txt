@@ -7,8 +7,8 @@ Test case #1: User authorization with valid data.
 	The user is on site https://sandalino.ua/ on the form "Login".
 
 	Steps:
-	1.	Enter valid data in the "Phone" and "Password" fields.	|	You are being is redirected to the "Profile" page.
-		Click the "Login" button.								|
+	1.	Enter valid data in the "Phone" and "Password" fields.			|	You are being is redirected to the "Profile" page.
+		Click the "Login" button.						|
 	
 Test case #2:  User authorization with invalid data.
 	
@@ -16,23 +16,23 @@ Test case #2:  User authorization with invalid data.
 	The user is on site https://sandalino.ua/ on the form "Login"
 
 	Steps:
-	1.	In the "Phone" field, enter the numbers "09868380".		|	Error "Enter 10 digits of the number starting with 0" is displayed.
-		Click "Login" button.									|	
+	1.	In the "Phone" field, enter the numbers "09868380".			|	Error "Enter 10 digits of the number starting with 0" is displayed.
+		Click "Login" button.							|	
 
-	2.	In the "Phone" field, enter the numbers "!№;%". 		|	The entered characters "!№;%" are not displayed in the "Phone" field.
-		Click "Login" button.									|
+	2.	In the "Phone" field, enter the numbers "!№;%". 			|	The entered characters "!№;%" are not displayed in the "Phone" field.
+		Click "Login" button.							|
 
-	3.	In the "Phone" field, enter the numbers "0986838080".	|	Error "Enter your password" is displayed.
-		Leave field "Пароль" blank.								|
-		Click "Login" button.									|
+	3.	In the "Phone" field, enter the numbers "0986838080".			|	Error "Enter your password" is displayed.
+		Leave field "Пароль" blank.						|
+		Click "Login" button.							|
 
-	4.	In the "Phone" field, enter the numbers "0986838080".	| 	Error "The phone number or password is incorrect" is displayed.
-		In the "Password" field, enter the numbers "12345".		|
-		Click "Login" button.									|
+	4.	In the "Phone" field, enter the numbers "0986838080".			| 	Error "The phone number or password is incorrect" is displayed.
+		In the "Password" field, enter the numbers "12345".			|
+		Click "Login" button.							|
 
-	5.	In the "Phone" field, enter the numbers "0000000000".	|	Error "The phone number or password is incorrect" is displayed.
-		In the "Password" field, enter the numbers "12345".		|
-		Click "Login" button.									|
+	5.	In the "Phone" field, enter the numbers "0000000000".			|	Error "The phone number or password is incorrect" is displayed.
+		In the "Password" field, enter the numbers "12345".			|
+		Click "Login" button.							|
 
 
 Test case #3: Registration of a new user with valid data.
@@ -41,23 +41,23 @@ Test case #3: Registration of a new user with valid data.
 	The user is on site https://sandalino.ua/ on the form "Registration".
 
 	Steps:
-	1. In the "Enter your name" field, enter the text "Serhii".			|	The "Serhii" text is displayed in the "Enter your name" field.
+	1.	In the "Enter your name" field, enter the text "Serhii".		|	The "Serhii" text is displayed in the "Enter your name" field.
 
-	2. In the "Enter your last name" field, enter the text "Antonets".	|	The "Antonets" text is displayed in the "Enter your last name" field.
+	2.	In the "Enter your last name" field, enter the text "Antonets".		|	The "Antonets" text is displayed in the "Enter your last name" field.
 
-	3. In the "Phone" field, enter the numbers "0986838080".			|	The "+38 (098) 683-80-80" phone number is displayed in the "Phone" field.
+	3.	In the "Phone" field, enter the numbers "0986838080".			|	The "+38 (098) 683-80-80" phone number is displayed in the "Phone" field.
 
-	4. In the "Password" field, enter the "Password" text.				|	The "●●●●●●●●" text is displayed in the "Password" field.
+	4.	In the "Password" field, enter the "Password" text.			|	The "●●●●●●●●" text is displayed in the "Password" field.
 
-	5. In the "Confirm password" field, enter the text "password".		|	The "●●●●●●●●" text is displayed in the "Confirm password" field.
+	5.	In the "Confirm password" field, enter the text "password".		|	The "●●●●●●●●" text is displayed in the "Confirm password" field.
 
-	6. Pass the "reCAPTCHA" test.										|	The passed "reCAPTCHA" test is displayed.
+	6.	Pass the "reCAPTCHA" test.						|	The passed "reCAPTCHA" test is displayed.
 
-	7. Click the "Sign up" button.										|	The "Confirmation of registration" modal window is displayed.
+	7.	Click the "Sign up" button.						|	The "Confirmation of registration" modal window is displayed.
 
-	8. Enter the SMS code in "Code from Sms" field.						|	The SMS code is displayed in the "Code from Sms" field.
+	8.	Enter the SMS code in "Code from Sms" field.				|	The SMS code is displayed in the "Code from Sms" field.
 
-	9. Click the "Send" button.											|	You are being is redirected to the "Profile" page.
+	9. 	Click the "Send" button.						|	You are being is redirected to the "Profile" page.
 
 Test case #4: Registration of a new user with invalid data.
 
@@ -65,24 +65,24 @@ Test case #4: Registration of a new user with invalid data.
 	The user is on site https://sandalino.ua/ on the form "Registration".
 
 	Steps:
-	1.	In the "Enter your name" field, enter the text "!№;%1234".					|	Error "Forbidden characters entered" is displayed.
-		Click "Sign up" button.														|
+	1.	In the "Enter your name" field, enter the text "!№;%1234".		|	Error "Forbidden characters entered" is displayed.
+		Click "Sign up" button.							|
 
-	2.	In the "Enter your last name" field, enter the text "!№;%1234".				|	Error "Invalid characters entered. Allowed characters: Аа-Яя,Aa-Zz, ' " is displayed.
-		Click "Sign up" button.														|	
+	2.	In the "Enter your last name" field, enter the text "!№;%1234".		|	Error "Invalid characters entered. Allowed characters: Аа-Яя,Aa-Zz, ' " is displayed.
+		Click "Sign up" button.							|	
 
-	3.	In the "Phone" field, enter the numbers "!№;%".								|	The entered characters "!№;%" are not displayed in the "Phone" field.
-		Click "Sign up" button.														|
+	3.	In the "Phone" field, enter the numbers "!№;%".				|	The entered characters "!№;%" are not displayed in the "Phone" field.
+		Click "Sign up" button.							|
 
-	4. 	In the "Phone" field, enter the numbers "09868380".							|	Error "Enter 10 digits of the number starting with 0" is displayed.
-		Click "Sign up" button.														|
+	4. 	In the "Phone" field, enter the numbers "09868380".			|	Error "Enter 10 digits of the number starting with 0" is displayed.
+		Click "Sign up" button.							|
 
-	5.	In the "Phone" field, enter the numbers "0986838080".						|	Error "A user with this phone number already exists" is displayed.
-		Click "Sign up" button.														|
+	5.	In the "Phone" field, enter the numbers "0986838080".			|	Error "A user with this phone number already exists" is displayed.
+		Click "Sign up" button.							|
 
-	6.	Enter valid data in fields "Enter your name", "Enter your last name",		|	Error "Take the test reCAPTCHA" is displayed.
-		"Phone", "Password", "Confirm password".									|
-		Click "Sign up" button.														|
+	6.	Enter valid data in fields "Enter your name", "Enter your last name",	|	Error "Take the test reCAPTCHA" is displayed.
+		"Phone", "Password", "Confirm password".				|
+		Click "Sign up" button.							|
 
 Test case #5: Adding one product to the cart (the first way).
 	
@@ -90,9 +90,9 @@ Test case #5: Adding one product to the cart (the first way).
 	The user is on site https://sandalino.ua/ on page https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html/
 
 	Steps:
-	1.	Click the "Add to cart" button.		|	"Choose a size" modal window is displayed.
+	1.	Click the "Add to cart" button.						|	"Choose a size" modal window is displayed.
 
-	2.	Click the "41" size.				|	The "To order" modal window is displayed.
+	2.	Click the "41" size.							|	The "To order" modal window is displayed.
 											|	The "To order" window is displayed the product
 											|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandalistylengard-sg-8481-57-26.html#cart-modal/
 
@@ -102,11 +102,11 @@ Test case #6: Adding one product to the cart (the second way).
 	The user is on site https://sandalino.ua/ on page https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html/
 
 	Steps:
-	1.	Click the "41" size.			|	The size field "41" is displayed highlighted.
+	1.	Click the "41" size.							|	The size field "41" is displayed highlighted.
 
-	2. Click the "Add to cart" button.	|	The "To order" modal window is displayed.
-											The "To order" window is displayed the product 
-											https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
+	2. Click the "Add to cart" button.						|	The "To order" modal window is displayed.
+											|	The "To order" window is displayed the product 
+											|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
 Test case #7: Adding ten product to the cart (the first way).
 	
@@ -114,7 +114,7 @@ Test case #7: Adding ten product to the cart (the first way).
 	The user is on site https://sandalino.ua/ on page https://sandalino.ua/checkout/. One product has been is added to the cart.
 
 	Steps:
-	1.	Click the "+" button 9 times.	|	The quantity of the product is displayed as "10".
+	1.	Click the "+" button 9 times.						|	The quantity of the product is displayed as "10".
 
 Test case #8: Adding ten product to the cart (the second way).
 	
@@ -122,13 +122,13 @@ Test case #8: Adding ten product to the cart (the second way).
 	The user is on site https://sandalino.ua/ on page https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
 	Steps:
-	1.	Click the "41" size.				|	The size field "41" is displayed highlighted.
+	1.	Click the "41" size.							|	The size field "41" is displayed highlighted.
 
-	2.	Click the "Add to cart" button.		|	The "To order" modal window is displayed.
+	2.	Click the "Add to cart" button.						|	The "To order" modal window is displayed.
 											|	The "To order" window is displayed the product
 											|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
-	3.	Click the "+" button 9 times.		|	The quantity of the product is displayed as "10".
+	3.	Click the "+" button 9 times.						|	The quantity of the product is displayed as "10".
 
 Test case #9:  Adding two products to the cart.
 
@@ -136,18 +136,18 @@ Test case #9:  Adding two products to the cart.
 	The user is on site https://sandalino.ua/ on page https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
 	Steps:
-	1.	Click the "41" size. 						|	The size field "41" is displayed highlighted.
+	1.	Click the "41" size. 							|	The size field "41" is displayed highlighted.
 
-	2.	Click the "Add to cart" button.				|	The "To order" modal window is displayed.
-													|	The "To order" window is displayed the product
-													|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
+	2.	Click the "Add to cart" button.						|	The "To order" modal window is displayed.
+											|	The "To order" window is displayed the product
+											|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
-	3.	Click the "Close modal window" button.		|	The modal window is closed.
+	3.	Click the "Close modal window" button.					|	The modal window is closed.
 
-	4.	Click the "Add to cart" button.				|	The "To order" modal window is displayed.
-													|	The quantity of the product "2" is displayed in the "To orderя" window.
+	4.	Click the "Add to cart" button.						|	The "To order" modal window is displayed.
+											|	The quantity of the product "2" is displayed in the "To orderя" window.
 
-	5.	Click the "Close modal window" button.		|	The modal window is closed.
+	5.	Click the "Close modal window" button.					|	The modal window is closed.
 
 Test case #10: Removing the product from the cart (the first way).
 
@@ -155,7 +155,7 @@ Test case #10: Removing the product from the cart (the first way).
 	The user is on site https://sandalino.ua/checkout/. One product https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html/ has been added to the cart.
 
 	Steps:
-	1.	Click the "Remove" button.	|	The product has been removed from the cart. You have been is redirected to the main page of the site.
+	1.	Click the "Remove" button.						|	The product has been removed from the cart. You have been is redirected to the main page of the site.
 
 Test case #11: Changing the amount of goods in the basket.
 
@@ -163,9 +163,9 @@ Test case #11: Changing the amount of goods in the basket.
 	 The user is on site https://sandalino.ua/checkout/. One product https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html/ has been added to the cart.
 
 	 Steps:
-	 1.	Click the "+" button twice. |	Product quantity is displayed is "3".
+	 1.	Click the "+" button twice.						|	Product quantity is displayed is "3".
 
-	 2.	Click the "-" button.		|	Product quantity is displayed is "2".
+	 2.	Click the "-" button.							|	Product quantity is displayed is "2".
 
 
 Test case #12: : Removing the product from the cart (the second way).
@@ -174,10 +174,10 @@ Test case #12: : Removing the product from the cart (the second way).
 	  The user is on site https://sandalino.ua/checkout/ on page https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html/
 
 	  Steps:
-	  1.	Click the "41" size.					|	The size field "41" is displayed highlighted.
+	  1.	Click the "41" size.							|	The size field "41" is displayed highlighted.
 
-	  2.	Click the "Add to cart" button. 		|	The "To order" modal window is displayed.
-	  												|	The "To order" window is displayed the product
-	  												|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
+	  2.	Click the "Add to cart" button. 					|	The "To order" modal window is displayed.
+	  										|	The "To order" window is displayed the product
+	  										|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
-	  3.	Click the "Remove" button.			|	Modal window "To order" is closed. The product has been is removed from the cart.
+	  3.	Click the "Remove" button.						|	Modal window "To order" is closed. The product has been is removed from the cart.
