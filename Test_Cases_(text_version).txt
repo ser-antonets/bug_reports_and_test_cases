@@ -104,7 +104,7 @@ Test case #6: Adding one product to the cart (the second way).
 	Steps:
 	1.	Click the "41" size.							|	The size field "41" is displayed highlighted.
 
-	2. Click the "Add to cart" button.						|	The "To order" modal window is displayed.
+	2.	Click the "Add to cart" button.						|	The "To order" modal window is displayed.
 											|	The "To order" window is displayed the product 
 											|	https://sandalino.ua/muzhskaya-obuv/sandalii-61/sandali-stylengard-sg-8481-57-26.html#cart-modal/
 
