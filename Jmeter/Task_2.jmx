@@ -18,7 +18,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -52,25 +52,24 @@
         <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc - WebDriver Sampler" enabled="true">
           <stringProp name="WebDriverSampler.script">WDS.sampleResult.sampleStart()
 
-WDS.browser.get(&apos;https://zahid-instrument.com/&apos;)
+WDS.browser.get(&apos;https://demo.nopcommerce.com/&apos;)
 
-var searchBar = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//input[@class=&apos;form-control input-lg&apos;]&quot;))
-searchBar.click()
-searchBar.sendKeys(&quot;TLT-235SB-380&quot;)
+var wait = new org.openqa.selenium.support.ui.WebDriverWait(WDS.browser, 1000)
 
-var buttonSearch = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//button[@class=&apos;btn btn-default btn-lg&apos;]&quot;))
-buttonSearch.click()
+var searchBar = WDS.browser.findElement(org.openqa.selenium.By.xpath(xpath=&quot;//input[@id=&apos;small-searchterms&apos;]&quot;))
+searchBar.sendKeys(&quot;Apple MacBook Pro 13-inch&quot;)
 
-var product = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//*[@id=&apos;content&apos;]/div[4]/div[2]/div/div/div[1]/h4/a&quot;)) 
+var searchBoxButton = WDS.browser.findElement(org.openqa.selenium.By.xpath(xpath=&quot;//form[@id=&apos;small-search-box-form&apos;]/button&quot;))
+searchBoxButton.click()
+
+var product = WDS.browser.findElement(org.openqa.selenium.By.xpath(xpath=&quot;//a[contains(text(),&apos;Apple MacBook Pro 13-inch&apos;)]&quot;))
 product.click()
 
-var buttonProductAddToCart = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//*[@id=&apos;button-cart&apos;]&quot;))
-buttonProductAddToCart.click()
+var addToCart = WDS.browser.findElement(org.openqa.selenium.By.xpath(xpath=&quot;//*[@id=&apos;add-to-cart-button-4&apos;]&quot;))
+addToCart.click()
 
-var cartOpen = WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//*[@id=&apos;cart&apos;]/button&quot;))
-cartOpen.click()
-
-WDS.browser.findElement(org.openqa.selenium.By.xpath(&quot;//*[@id=&apos;cart&apos;]/ul/li[1]/div&quot;))
+var cartButton = WDS.browser.findElement(org.openqa.selenium.By.xpath(xpath=&quot;//*[@id=&apos;topcartlink&apos;]/a&quot;))
+cartButton.click()
 
 WDS.sampleResult.sampleEnd()</stringProp>
           <stringProp name="WebDriverSampler.parameters"></stringProp>
