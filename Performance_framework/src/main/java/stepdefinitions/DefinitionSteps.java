@@ -7,14 +7,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import manager.PageFactoryManager;
-import navigationtiming.PerformanceNavigationTiming;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.*;
 
 import static io.github.bonigarcia.wdm.WebDriverManager.chromedriver;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
+
 
 public class DefinitionSteps {
 
